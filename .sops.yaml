@@ -1,0 +1,5 @@
+# creation rules are evaluated sequentially, the first match wins
+creation_rules:
+  - path_regex: \.azkv\.yaml$
+    encrypted_regex: ^(data|stringData)$
+    azure_keyvault: https://fluxcd-07dc50e47be34695.vault.azure.net/keys/sops-cluster0/40226a34c0ea4432aa9a3a5026845c4b
